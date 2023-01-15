@@ -47,24 +47,26 @@ const heroImageAsset = assets.find(asset => {
 	</head>
 
 	<body>
-		<Header />
-		<main>
-			<article>
-				{heroImageAsset && (
-					<Image
-						width={720}
-						height={360}
-						src={heroImageAsset.default}
-						alt=""
-					/>
-				)}
-				<h1 class="title">{title}</h1>
-				{publishDate && <time>{publishDate}</time>}
-				{updatedDate && <div>Last updated on <time>{updatedDate}</time></div>}
-				<hr/>
-				<slot />
-			</article>
-		</main>
-		<Footer />
+		<div class="w-full max-w-screen min-h-screen h-full overflow-x-hidden overflow-y-auto">
+			<Header />
+			<main>
+				<article>
+					{heroImageAsset && (
+						<Image
+							width={720}
+							height={360}
+							src={heroImageAsset.default}
+							alt=""
+						/>
+					)}
+					<h1 class="title">{title}</h1>
+					{publishDate && <time>{publishDate}</time>}
+					{updatedDate && <div>Last updated on <time>{updatedDate}</time></div>}
+					<hr/>
+					<slot />
+				</article>
+			</main>
+			<Footer />
+		</div>
 	</body>
 </html>

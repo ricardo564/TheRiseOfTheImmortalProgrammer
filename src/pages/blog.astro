@@ -1,7 +1,7 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import BaseHead from '../blocks/BaseHead.astro';
+import Header from '../blocks/Header.astro';
+import Footer from '../blocks/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 
 const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(

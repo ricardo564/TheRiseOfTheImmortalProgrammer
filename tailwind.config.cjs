@@ -16,12 +16,12 @@ module.exports = {
         'app-background': '#F5F5F5',
       },
       animation: {
-        'fadeOut': 'fadeOut 5s ease-in-out',
+        'fade-out': 'fade-out 5s ease-in-out',
         'fade-in-from-left': 'fade-in-from-left 0.2s ease-in-out',
         'fade-in-from-right': 'fade-in-from-right 0.2s ease-in-out',
       },
       keyframes: {
-        'fadeOut': {
+        'fade-out': {
           '0%': {
             opacity: 1,
           },
